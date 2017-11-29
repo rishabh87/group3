@@ -1,0 +1,161 @@
+//Knob function is used here
+
+/*
+
+int node(int ct)
+
+{
+
+	int crrtemp;
+
+
+
+	crrtemp=ct;
+
+   //
+
+if(crrtemp <=16)
+
+{
+
+    //	printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 1\n");
+
+	delay(1000);
+
+}
+
+else if(crrtemp<=25)
+
+{   printf("Current KNOB Statuse= 1\n");
+
+	delay(1000);
+
+}
+
+else if(crrtemp<=30)
+
+{
+
+      //	printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 2\n");
+
+	delay(1000);
+
+
+
+}
+
+else if(crrtemp<=35)
+
+{
+
+	//printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 3\n");
+
+	delay(1000);
+
+}
+
+else if(crrtemp<=45)
+
+{
+
+       //	printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 4\n");
+
+	delay(1000);
+
+}
+
+       //	printf("Here knob program is stoped\n");
+
+	incdec(crrtemp);
+
+	return(ct);
+
+}//Knob function is used here
+
+/*
+
+int node(int ct)
+
+{
+
+	int crrtemp;
+
+
+
+	crrtemp=ct;
+
+   //
+
+if(crrtemp <=16)
+
+{
+
+    //	printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 1\n");
+
+	delay(1000);
+
+}
+
+else if(crrtemp<=25)
+
+{   printf("Current KNOB Statuse= 1\n");
+
+	delay(1000);
+
+}
+
+else if(crrtemp<=30)
+
+{
+
+      //	printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 2\n");
+
+	delay(1000);
+
+
+
+}
+
+else if(crrtemp<=35)
+
+{
+
+	//printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 3\n");
+
+	delay(1000);
+
+}
+
+else if(crrtemp<=45)
+
+{
+
+       //	printf("Current Room Temperature is =%d\n",crrtemp);
+
+	printf("Current KNOB Statuse= 4\n");
+
+	delay(1000);
+
+}
+
+       //	printf("Here knob program is stoped\n");
+
+	incdec(crrtemp);
+
+	return(ct);
+
+}
