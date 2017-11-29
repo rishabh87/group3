@@ -1,0 +1,78 @@
+//Increase Decrease power function is used
+incdec(int ct1)
+{
+	int crmt;
+	crmt=ct1;
+	if(crmt<=16)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Decrease Power\n");// , KNOB=1\n");
+		delay(1000);
+	}
+	else if(crmt<=23)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Decrease Power\n");//, KNOB=1\n");
+		delay(1000);
+	}
+		else if(crmt<=25)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Increase Power\n");//, KNOB=1\n");
+		delay(1000);
+	}
+
+	else if(crmt>=25)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Increase Power\n");// , KNOB=2\n");
+		delay(1000);
+	}
+	else if(crmt<=30)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Decrease Power\n");// , KNOB=2\n");
+		delay(1000);
+	}
+	else if(crmt>=30)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Increase Power\n");//, KNOB=3\n");
+		delay(1000);
+	}
+	else if(crmt<=35)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Increase Power\n");//, KNOB=3\n");
+		delay(1000);
+	}
+	else if(crmt>=35)
+	{
+		printf("Wait for Some Movement\n");
+	       //	printf("Current Room Temperature is =%d\n",crmt);
+		printf("Increase Power\n");//, KNOB=4\n");
+		delay(1000);
+	}
+	else if(crmt<=45)
+	{
+		printf("Wait for Some Movement\n");
+	     //	printf("Current Room Temperature=%d\n",crmt);
+		printf("Increase Power\n");// , KNOB=4\n");
+		delay(1000);
+	}
+	else
+	{
+		printf("Its too cool \n");
+		printf("Switch off AC\n");
+		delay(2000);
+	}
+
+return(crmt);
+}
