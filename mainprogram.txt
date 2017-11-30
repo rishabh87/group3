@@ -1,0 +1,102 @@
+// Main program is start here
+
+
+int main(void)
+{
+
+	int numberArray[50];
+	int i,j, k, m;
+	FILE *myFile;
+	int temp=0;
+	myFile = fopen("number.txt", "r");
+
+clrscr();
+
+    if (myFile == NULL)
+    {
+	printf("Error Reading File\n");
+	exit (0);
+    }
+
+    for (i = 0; i < 50; i++){
+	fscanf(myFile, "%d,", &numberArray[i] );
+}
+
+printf("*********** WelCome to the AC Simulator ************\n");
+printf("AC ON!\n");
+printf("Enter Required Temperature= ");
+scanf("%d",&temp);
+printf("You Entered =%d\n",temp);
+if(temp<=15 || temp>=46)
+{
+printf("YOU Entered Invalid Temperature!!\n");
+delay(1000);
+main();
+}      // at this movement ac is on it required to switch main function
+
+else
+{
+for (i = 0; i < 49; i++)
+    {
+     // j= numberArray[i]+1;
+	 //k=numberArray[i]+2;
+	 //m=numberArray[i]+3;
+
+if(temp<=16 && temp<numberArray[i] && temp<=25)
+{       printf("\n");;
+	printf("Current Room Temperature is =%d\n",numberArray[i]);
+	//node(numberArray[i]);
+	printf("Switch Off HEATER\n");
+	printf("Switch ON AC\n");
+	printf("INCREASE POWER  \n");
+	delay(2000);
+	printf("\n");
+}
+if(temp >25 &&temp>numberArray[i] &&temp>35)
+{       printf("\n");
+	printf("Current Temperature is =%d\n",numberArray[i]);
+	printf("Switch ON HEATER\n");
+	printf("Switch Off AC\n");
+	printf("Dcrease Power  \n");
+	delay(1000);
+	printf("\n");
+ }
+if(temp == numberArray[i] )
+ {      printf("\n");
+	printf("Current Room Temprature is =%d\n",numberArray[i]);
+	printf("Switch off AC\n \n");
+	printf("Switch Off HEATER\n");
+	printf("Wait for some movement\n");
+	delay(1000);
+	printf("\n");
+ }
+ if(temp>45 && temp>numberArray[i])
+ {      printf("\n");
+	printf("Current Room Temprature is =%d\n",numberArray[i]);
+	printf("Switch off AC\n \n");
+	printf("Switch ON HEATER\n");
+	printf("Decrease Temperature\n");
+	delay(1000);
+	printf("\n");
+ }
+ else
+ {      printf("\n");
+	printf("Current Room Temprature is =%d\n", numberArray[i]);
+	printf("Keep AC On\n");
+	delay(1000);
+	printf("\n");
+ }
+continue;
+}
+}
+if(i >=50)
+{
+printf("Here The Actual program END\n");
+printf("To Terminate Program Please PRESS ENTER KEY  <---|\n");
+delay(5000);
+}
+
+    fclose(myFile);
+   return 0;
+
+}
